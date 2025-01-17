@@ -1,0 +1,175 @@
+/* Base styles */
+body {
+    font-family: 'Sora', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333; /* Optional: Background color */
+    color: white; /* Footer text color */
+    padding: 20px 0;
+    text-align: center; /* Fallback for older browsers */
+}
+
+/* Center text and icons */
+.footer-content {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 15px; /* Add spacing between text and icons */
+    flex-wrap: wrap; /* Wrap in case of smaller screens */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00bcd4;
+}
+
+/* Section styling */
+section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+section:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+section:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Image container */
+.image-container {
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.social-icons {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display items inline */
+    justify-content: center; /* Center icons horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0; /* Add some space around */
+}
+
+.social-icons li {
+    margin: 0 10px; /* Add space between icons */
+}
+
+/* Icon styling */
+.icon {
+    width: 30px; /* Set a fixed width */
+    height: 30px; /* Set a fixed height */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.profile-section {
+    display: flex; /* Enable Flexbox for horizontal alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Space between image and text */
+    padding: 20px; /* Add some padding */
+}
+
+
+.profile-text {
+    max-width: 600px; /* Limit the width of the text block */
+}
+
+.profile-text h2 {
+    margin: 0 0 10px; /* Add space below the heading */
+    font-size: 1.5em; /* Adjust heading size */
+    color: #333; /* Optional: Customize the color */
+}
+
+.profile-text p {
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Optional: Customize the color */
+}
+.profile-section {
+    display: flex; /* Enable Flexbox for horizontal alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Space between image and text */
+    padding: 20px; /* Add some padding */
+}
+
+.profile-text {
+    max-width: 600px; /* Limit the width of the text block */
+}
+
+.profile-text h2 {
+    margin: 0 0 10px; /* Add space below the heading */
+    font-size: 1.5em; /* Adjust heading size */
+    color: #333; /* Optional: Customize the color */
+}
+
+.profile-text p {
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Optional: Customize the color */
+}
