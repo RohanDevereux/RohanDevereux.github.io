@@ -8,51 +8,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <nav class="navbar">
-            <div class="logo">Rohan Devereux</div>
+            <div class="logo gradient-text">Rohan Devereux</div>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./experience.html">Experience</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="./resume.html">Resume</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./CV PDF.html">CV PDF</a></li>
-
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="./experience.html" class="nav-link">Experience</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="./resume.html" class="nav-link">Resume</a></li>
+                <li><a href="./projects.html" class="nav-link">Projects</a></li>
+                <li><a href="./CV PDF.html" class="nav-link" target="_blank">CV PDF</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="profile-section">
-        <div class="image-container">
-            <img src="images/ProfilePhoto.jpg" alt="Profile Photo" />
+    <main class="content">
+        <div class="profile-section">
+            <div class="image-container">
+                <img src="images/ProfilePhoto.jpg" alt="Profile Photo" class="profile-img"/>
+            </div>
+            <div class="profile-text">
+                <h2 class="gradient-text">Rohan Devereux</h2>
+                <p>
+                    I am a third-year undergraduate college student in Applied and Computational Mathematics 
+                    with experience in backtesting trading strategies, 
+                    building predictive models and conducting statistical research. Passionate about solving 
+                    real-world problems with data-driven insights.
+                </p>
+            </div>
         </div>
-        <div class="profile-text">
-            <h2>Rohan Devereux</h2>
-            <p>
-                I am a third-year undergraduate college student in Applied and Computational Mathematics 
-                with experience in backtesting trading strategies, 
-                building predictive models and conducting statistical research. Passionate about solving 
-                real-world problems with data-driven insights.
-            </p>
-        </div>
-    </div>
-    
+    </main>
+
     <footer>
         <p>© 2025 Rohan Devereux. All Rights Reserved.</p>
-<ul class="social-icons">
-    <li>
-        <a href="https://www.linkedin.com/in/rohandevereux" target="_blank" aria-label="LinkedIn">
-            <img src="images/linkedin.svg" alt="LinkedIn" class="icon">
-        </a>
-    </li>
-    <li>
-        <a href="mailto:devereuxrohan@gmail.com" aria-label="Email">
-            <img src="images/gmail.svg" alt="Email" class="icon">
-        </a>
-    </li>
-</ul>
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.linkedin.com/in/rohandevereux" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="icon">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:devereuxrohan@gmail.com" aria-label="Email">
+                    <img src="images/gmail.svg" alt="Email" class="icon">
+                </a>
+            </li>
+        </ul>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

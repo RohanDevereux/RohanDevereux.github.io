@@ -1,112 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohan Devereux CV</title>
+    <title>Resume | Rohan Devereux</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <nav class="navbar">
-            <div class="logo">Rohan Devereux</div>
+            <div class="logo gradient-text">Rohan Devereux</div>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./experience.html">Experience</a></li>
-                <li><a href="./education.html">Education</a></li>
-                <li><a href="./resume.html">Resume</a></li>
-                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="CV PDF.html" class="nav-link" target="_blank">CV PDF</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Rohan Devereux</h1>
-    <p>104 St. Leonards, Edinburgh | <a href="mailto:devereuxrohan@gmail.com">devereuxrohan@gmail.com</a> | +353-870608947 | <a href="https://www.linkedin.com/in/rohandevereux" target="_blank">www.linkedin.com/in/rohandevereux</a></p>
+    <div style="height: 80px;"></div>
+    <main class="cv-content">
+        <h1 class="gradient-text">Resume</h1>
+        
+        <div class="cv-section">
+            <h2>Education</h2>
+            <div class="cv-item">
+                <p class="cv-title">University College Dublin</p>
+                <span class="cv-date">Expected May 2026</span>
+                <p class="cv-description">
+                    B.Science in Applied and Computational Mathematics <br>
+                    GPA: 4.05/4.20 | Courses in Pure, Applied, Computational, and Financial Mathematics <br>
+                    College of Science Academic Award 2024 | Entrance Scholar 2022 <br>
+                    Classical Association of Ireland Centenary Medal 2023
+                </p>
+            </div>
+            <div class="cv-item">
+                <p class="cv-title">University of Edinburgh, College of Science and Engineering</p>
+                <span class="cv-date">2024-2025</span>
+                <p class="cv-description">
+                    Exchange student for one year. Only student nominated by the UCD College of Science out of 400+ potential candidates.
+                </p>
+            </div>
+        </div>
 
-    <h2>Education</h2>
-    <ul>
-        <li><strong>University College Dublin</strong> <span class="sub-section">B.Science in Applied and Computational Mathematics expected May 2026</span>
-            <ul>
-                <li>GPA: 4.05/4.20 | Courses in Pure, Applied, Computational and Financial Mathematics</li>
-                <li>College of Science Academic Award 2024 | Entrance Scholar 2022</li>
-                <li>Classical Association of Ireland Centenary Medal 2023</li>
-            </ul>
-        </li>
-        <li><strong>University of Edinburgh, College of Science and Engineering</strong> <span class="sub-section">2024-2025</span>
-            <ul>
-                <li>Exchange student for one year | Only student nominated by the UCD College of Science out of 400+ potential candidates</li>
-            </ul>
-        </li>
-        <li><strong>Gonzaga College Dublin (High School)</strong> <span class="sub-section">Graduated 2022</span>
-            <ul>
-                <li>Achieved 8 H1s in the Irish Leaving Certificate (Highest grades achievable in final school examinations; In the top 0.1% of results in the country) in Mathematics, Applied Mathematics, Physics, Chemistry, English, French, Irish and Ancient Greek</li>
-                <li>International Junior Science Olympiad in Doha, Qatar: Bronze Medal 2019</li>
-                <li>Irish Junior Science Olympiad: Silver Medal 2019</li>
-                <li>Andrew Bacon Award for Mathematics and Science | 'Men Speechless' Award for Rhetoric 2022</li>
-            </ul>
-        </li>
-    </ul>
+        <div class="cv-section">
+            <h2>Work Experience</h2>
+            <div class="cv-item">
+                <p class="cv-title">Ishara Investments | Data Science Intern</p>
+                <span class="cv-date">2024-Present</span>
+                <p class="cv-description">
+                    Building and implementing data science projects in Python to enhance hedge fund investment research in the biotech sector.
+                </p>
+            </div>
+            <div class="cv-item">
+                <p class="cv-title">UCD School of Economics | Statistical Research Assistant</p>
+                <span class="cv-date">Summer 2024</span>
+                <p class="cv-description">
+                    Conducted statistical analysis for a paper scheduled for publication in early 2025. <br>
+                    Utilized R programming to perform multiple regression analyses and statistical evaluations.
+                </p>
+            </div>
+        </div>
 
-    <h2>Work Experience</h2>
-    <ul>
-        <li><strong>Ishara Investments</strong> <span class="sub-section">Data Science Intern 2024-Present</span>
-            <ul>
-                <li>Building and implementing data science projects in Python to enhance hedge fund fundamental investment research in the biotech sector</li>
+        <div class="cv-section">
+            <h2>Technical Skills</h2>
+            <ul class="cv-list">
+                <li><strong>Computer Programming:</strong> Python (NumPy, SciPy, Pandas, Scikit-learn, TensorFlow, Matplotlib), SQL, R, Mathematica, LaTeX, Microsoft Office.</li>
+                <li><strong>Quantitative Skills:</strong> Statistical and Probabilistic Modeling, Machine Learning, Differential Equations, Financial Mathematics, Linear Algebra.</li>
             </ul>
-        </li>
-        <li><strong>UCD School of Economics</strong> <span class="sub-section">Statistical Research Assistant Summer 2024</span>
-            <ul>
-                <li>Conducted statistical analysis for a paper scheduled for publication in early 2025, focusing on the determinants of demand for private health insurance in Ireland</li>
-                <li>Utilized R programming to perform multiple regression analyses, evaluations of statistical significance and decompositions of endogenous effects, contributing to the statistical rigor of the paper</li>
-                <li>Independently formulated hypotheses and tested their validity against empirical data</li>
-                <li>Reviewed literature in health economics and econometrics in order to gain a wider understanding of the subject matter and its statistical treatment</li>
-            </ul>
-        </li>
-        <li><strong>Deerpark Tennis Club and Shankill Tennis Club</strong> <span class="sub-section">Coach 2022-2024</span>
-            <ul>
-                <li>Taught tennis technique and managed more junior coaches</li>
-                <li>Volunteer coach to help prepare members of the Irish Visually Impaired Tennis team for the World Championships in Italy, contributing to their achievement of two bronze medals</li>
-            </ul>
-        </li>
-        <li><strong>ING Bank N.V. (Dublin Branch)</strong> <span class="sub-section">Intern in Finance Winter 2020</span>
-            <ul>
-                <li>Performed valuation, compliance and accounting exercises</li>
-                <li>Doubled the efficiency of balance sheet creation by developing a program to automate accounting calculations</li>
-                <li>Researched BMG Cash Management and presented ideas for growth to senior management</li>
-            </ul>
-        </li>
-        <li><strong>Fighting Words</strong> <span class="sub-section">Volunteer Spring 2020</span>
-            <ul>
-                <li>Helped children develop writing skills through creative expression</li>
-            </ul>
-        </li>
-    </ul>
+        </div>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Computer Programming:</strong> Python, C++, SQL, LaTeX, Microsoft Office</li>
-        <li><strong>Quantitative Skills:</strong> Statistical Modeling, Machine Learning, Numerical Problem-solving</li>
-    </ul>
+        <div class="cv-section">
+            <h2>Co-Curricular Activities</h2>
+            <div class="cv-item">
+                <p class="cv-title">Edinburgh University Trading and Investment Club | Quantitative Analyst</p>
+                <span class="cv-date">2024-Present</span>
+                <p class="cv-description">
+                    Developing trading strategies utilizing mathematics and software programming at a fund with over £92,000 in AUM.
+                </p>
+            </div>
+            <div class="cv-item">
+                <p class="cv-title">Edinburgh University Formula Student | Business Team Member</p>
+                <span class="cv-date">2024-Present</span>
+                <p class="cv-description">
+                    Developing business models and pitches regarding self-driving cars for the Formula Student UK competition.
+                </p>
+            </div>
+        </div>
 
-    <h2>Hobbies & Additional Information</h2>
-    <ul>
-        <li>Tennis, Guitar, Chess, Judo, Hiking, Swimming</li>
-        <li>Dual citizen: Ireland and USA | Native English speaker</li>
-    </ul>
+        <div class="cv-section">
+            <h2>Hobbies & Additional Information</h2>
+            <ul class="cv-list">
+                <li>Tennis, Guitar, Chess, Judo, Hiking, Swimming</li>
+                <li>Dual citizen: Ireland and USA</li>
+                <li>Native English speaker</li>
+            </ul>
+        </div>
+    </main>
+
     <footer>
         <p>© 2025 Rohan Devereux. All Rights Reserved.</p>
-<ul class="social-icons">
-    <li>
-        <a href="https://www.linkedin.com/in/rohandevereux" target="_blank" aria-label="LinkedIn">
-            <img src="images/linkedin.svg" alt="LinkedIn" class="icon">
-        </a>
-    </li>
-    <li>
-        <a href="mailto:devereuxrohan@gmail.com" aria-label="Email">
-            <img src="images/gmail.svg" alt="Email" class="icon">
-        </a>
-    </li>
-</ul>
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.linkedin.com/in/rohandevereux" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="icon">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:devereuxrohan@gmail.com" aria-label="Email">
+                    <img src="images/gmail.svg" alt="Email" class="icon">
+                </a>
+            </li>
+        </ul>
     </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>

@@ -1,48 +1,51 @@
-/* Base styles */
+/* Importing font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Base styling for body */
 body {
-    font-family: 'Sora', Arial, sans-serif;
-    margin: 0;
+    background-color: black; /* Set background to black */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    color: white; /* Default text color */
+    margin: 50px; /* Space around the page */
     padding: 0;
+    line-height: 1.6; /* Increase readability */
 }
 
-/* Header styling */
+/* Gradient text effect applied to key elements */
+h1, h2, h3, p, a {
+    background: linear-gradient(90deg, #9370DB, #ffffff); /* Purple to white gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Header styling with transparent blur effect */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-    background-color: #333; /* Optional: Background color */
-    color: white; /* Footer text color */
+    width: 100%;
+    backdrop-filter: blur(10px); /* Blurred effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     padding: 20px 0;
-    text-align: center; /* Fallback for older browsers */
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
 }
 
-/* Center text and icons */
-.footer-content {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items horizontally */
-    gap: 15px; /* Add spacing between text and icons */
-    flex-wrap: wrap; /* Wrap in case of smaller screens */
+/* Logo styling with gradient effect */
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 20px;
+    background: linear-gradient(90deg, #9370DB, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-
+/* Navigation Menu */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    padding: 0 40px;
 }
 
 .menu {
@@ -58,31 +61,118 @@ footer {
 
 .menu a {
     text-decoration: none;
-    color: white;
     font-size: 1em;
-    transition: color 0.3s;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: #00bcd4;
+    color: #9370DB;
 }
 
-/* Section styling */
-section {
-    padding: 50px 20px;
-    margin: 20px 0;
+/* Heading Styles */
+h1 {
     text-align: center;
+    font-size: 36px;
+    font-weight: 700;
 }
 
-section:nth-child(odd) {
-    background-color: #f9f9f9;
+h2 {
+    font-size: 24px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+    margin-top: 40px;
+    font-weight: 600;
 }
 
-section:nth-child(even) {
-    background-color: #ffffff;
+/* Contact section styling */
+.contact {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
-/* Image container */
+.cv-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.cv-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.cv-date {
+    font-style: italic;
+    color: #666;
+    white-space: nowrap; /* Prevents the date from wrapping to a new line */
+}
+/* CV content container */
+.cv-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* CV sections */
+.cv-section {
+    margin-bottom: 30px;
+}
+
+/* Section title formatting */
+.cv-section .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Date position in CV */
+.cv-section .date {
+    float: right;
+    font-weight: bold;
+}
+
+/* Unordered lists inside CV sections */
+.cv-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Clearfix to handle floated elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Profile section styling */
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 100px; /* Avoid overlap with fixed header */
+}
+
+/* Profile text styling */
+.profile-text {
+    max-width: 600px;
+    font-size: 1.2em;
+    color: #ccc; /* Light gray text */
+    line-height: 1.6;
+}
+
+/* Image container styling */
 .image-container {
     margin: 20px 0;
 }
@@ -91,85 +181,150 @@ section:nth-child(even) {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Animations */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+/* Social media icons */
 .social-icons {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Display items inline */
-    justify-content: center; /* Center icons horizontally */
-    padding: 0; /* Remove default padding */
-    margin: 10px 0; /* Add some space around */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
 }
 
 .social-icons li {
-    margin: 0 10px; /* Add space between icons */
+    margin: 0 10px;
 }
 
-/* Icon styling */
 .icon {
-    width: 30px; /* Set a fixed width */
-    height: 30px; /* Set a fixed height */
-    transition: transform 0.3s ease; /* Add hover effect */
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
 }
 
 .icon:hover {
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.1);
 }
 
-.profile-section {
-    display: flex; /* Enable Flexbox for horizontal alignment */
-    align-items: center; /* Align items vertically */
-    justify-content: flex-start; /* Align items to the left */
-    gap: 20px; /* Space between image and text */
-    padding: 20px; /* Add some padding */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+    /* Resume content container */
+.cv-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-
-.profile-text {
-    max-width: 600px; /* Limit the width of the text block */
+/* Section titles */
+.cv-section h2 {
+    font-size: 24px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.profile-text h2 {
-    margin: 0 0 10px; /* Add space below the heading */
-    font-size: 1.5em; /* Adjust heading size */
-    color: #333; /* Optional: Customize the color */
+/* Resume items */
+.cv-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
-.profile-text p {
-    line-height: 1.6; /* Improve readability */
-    color: #555; /* Optional: Customize the color */
-}
-.profile-section {
-    display: flex; /* Enable Flexbox for horizontal alignment */
-    align-items: center; /* Align items vertically */
-    justify-content: flex-start; /* Align items to the left */
-    gap: 20px; /* Space between image and text */
-    padding: 20px; /* Add some padding */
+/* Resume title and date alignment */
+.cv-title {
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1;
+    margin-bottom: 5px;
 }
 
-.profile-text {
-    max-width: 600px; /* Limit the width of the text block */
+.cv-date {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    color: #bbb;
+    min-width: 150px;
 }
 
-.profile-text h2 {
-    margin: 0 0 10px; /* Add space below the heading */
-    font-size: 1.5em; /* Adjust heading size */
-    color: #333; /* Optional: Customize the color */
+/* Resume description styling */
+.cv-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    flex-basis: 100%;
 }
 
-.profile-text p {
-    line-height: 1.6; /* Improve readability */
-    color: #555; /* Optional: Customize the color */
+/* List styling */
+.cv-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Social media icons */
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cv-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cv-date {
+        text-align: left;
+        margin-top: 5px;
+    }
+}
 }
